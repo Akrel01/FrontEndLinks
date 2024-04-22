@@ -1,0 +1,189 @@
+@mixin back-image{
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+}
+
+
+/*-----------------------HEADER AND NAV------------------*/
+
+.navegador{
+    width: 1200px;
+    height: 150px;
+
+    margin: 0 auto;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 15px;
+        border: 1px solid black;
+
+        margin: 70px 0 20px;
+
+        width: 100%;
+        height: 100%;
+
+        &__nav{
+            width: 60%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            margin-top: 30px;
+        }
+    }
+}
+
+/*-----------HERO-------------------------*/
+
+.hero{
+    width: 60%;
+    height:200px;
+
+    margin: 13rem auto;
+    
+    text-align: center;
+
+    &__text{
+        padding: 10px 25px;
+    }
+}
+
+
+/*-----------MAIN-SECTION-------------------------*/
+
+
+
+.seccion{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+
+    margin: 10rem 0;
+    padding: 50px;
+
+
+    .container__itemL{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+.seccion__start{
+    margin: 22rem 0 0 0;
+}
+
+
+
+/*-------------------ITEM-------------------------------*/
+
+.container__itemL{
+    &__item{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        padding: 15px;
+        border-radius: 15px;
+
+        text-align: center;
+
+        width: 150px;
+        height: 200px;
+
+        /*-------------------------IMAGES--URL´S-----------------*/
+        .one{
+            background-image: url(/assets/logoGoogleFonts.jpg);
+        }
+        .two{
+            background-image: url(/assets/DafontLogo.png);
+        }
+
+        /*S-Imagenes*/
+        .Ione{
+            background-image: url(/assets/YandexLogo.png);
+        }
+        .Itwo{
+            background-image: url(/assets/boxiconsLogo.png)
+        }
+        .Ithree{
+            background-image: url(/assets/shotsLogo.png)
+        }
+        .Ifour{
+            background-image: url(/assets/heropatternsLogo.jpg)
+        }
+
+        /*S-Documentacion*/
+        .Done{
+            background-image: url(/assets/htmlLogo.jpg)
+        }
+        .Dtwo{
+            background-image: url(/assets/cssLogo.jpg)
+        }
+        .Dthree{
+            background-image: url(/assets/JavaScriptLogo.png)
+        }
+        .Dfour{
+            background-image: url(/assets/bemLogo.jpg)
+        }
+        .Dfive{
+            background-image: url(/assets/smacssLogo.jpg)
+        }
+
+        /*S-Recursos*/
+        .Rone{
+            background-image: url(/assets/apiLogo.jpg)
+        }
+        .Rtwo{
+            background-image: url(/assets/codilinkLogo.png)
+        }
+        .Rthree{
+            background-image: url(/assets/reactLogo.png)
+        }
+        .Rfour{
+            background-image: url(/assets/sonnerLogo.jpg)
+        }
+        .Rfive{
+            background-image: url(/assets/html5upLogo.png)
+        }
+        .Rsix{
+            background-image: url(/assets/RefactoringLogo.png)
+        }
+        .Rseven{
+            background-image: url(/assets/fontawesomeLogo.png)
+        }
+        .Reight{
+            background-image: url(/assets/FrontendMentorLogo.jpeg)
+        }
+        .Rnine{
+            background-image: url(/assets/haikeiLogo.png)
+        }
+        .Rten{
+            background-image: url(/assets/cssbuttonsLogo.png)
+        }
+    }
+}
+
+
+
+
+.img{
+    @include back-image;
+    background-color: white;
+ }

@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto+Condensed:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/assets/circuit-board.svg);
+}
+
+.mainContent {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*-----------------------HEADER AND NAV------------------*/
+.navegador {
+  width: 1200px;
+  height: 150px;
+  margin: 0 auto;
+}
+.navegador__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid black;
+  margin: 70px 0 20px;
+  width: 100%;
+  height: 100%;
+}
+.navegador__container__nav {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/*-----------HERO-------------------------*/
+.hero {
+  width: 60%;
+  height: 200px;
+  margin: 13rem auto;
+  text-align: center;
+}
+.hero__text {
+  padding: 10px 25px;
+}
+
+/*-----------MAIN-SECTION-------------------------*/
+.seccion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 50px;
+  margin: 10rem 0;
+  padding: 50px;
+}
+.seccion .container__itemL {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.seccion__start {
+  margin: 22rem 0 0 0;
+}
+
+/*-------------------ITEM-------------------------------*/
+.container__itemL__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  width: 150px;
+  height: 200px;
+  /*-------------------------IMAGES--URL´S-----------------*/
+  /*S-Imagenes*/
+  /*S-Documentacion*/
+  /*S-Recursos*/
+}
+.container__itemL__item .one {
+  background-image: url(/assets/logoGoogleFonts.jpg);
+}
+.container__itemL__item .two {
+  background-image: url(/assets/DafontLogo.png);
+}
+.container__itemL__item .Ione {
+  background-image: url(/assets/YandexLogo.png);
+}
+.container__itemL__item .Itwo {
+  background-image: url(/assets/boxiconsLogo.png);
+}
+.container__itemL__item .Ithree {
+  background-image: url(/assets/shotsLogo.png);
+}
+.container__itemL__item .Ifour {
+  background-image: url(/assets/heropatternsLogo.jpg);
+}
+.container__itemL__item .Done {
+  background-image: url(/assets/htmlLogo.jpg);
+}
+.container__itemL__item .Dtwo {
+  background-image: url(/assets/cssLogo.jpg);
+}
+.container__itemL__item .Dthree {
+  background-image: url(/assets/JavaScriptLogo.png);
+}
+.container__itemL__item .Dfour {
+  background-image: url(/assets/bemLogo.jpg);
+}
+.container__itemL__item .Dfive {
+  background-image: url(/assets/smacssLogo.jpg);
+}
+.container__itemL__item .Rone {
+  background-image: url(/assets/apiLogo.jpg);
+}
+.container__itemL__item .Rtwo {
+  background-image: url(/assets/codilinkLogo.png);
+}
+.container__itemL__item .Rthree {
+  background-image: url(/assets/reactLogo.png);
+}
+.container__itemL__item .Rfour {
+  background-image: url(/assets/sonnerLogo.jpg);
+}
+.container__itemL__item .Rfive {
+  background-image: url(/assets/html5upLogo.png);
+}
+.container__itemL__item .Rsix {
+  background-image: url(/assets/RefactoringLogo.png);
+}
+.container__itemL__item .Rseven {
+  background-image: url(/assets/fontawesomeLogo.png);
+}
+.container__itemL__item .Reight {
+  background-image: url(/assets/FrontendMentorLogo.jpeg);
+}
+.container__itemL__item .Rnine {
+  background-image: url(/assets/haikeiLogo.png);
+}
+.container__itemL__item .Rten {
+  background-image: url(/assets/cssbuttonsLogo.png);
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 100%;
+  background-color: white;
+}
+
+/*Fuente*/
+/*Variables de estilos*/
+/*********************************************************/
+/*-------------------NAVEGADOR-------------------------*/
+.navegador__container {
+  background-color: rgb(238, 238, 238);
+}
+.navegador__container .navegador__title {
+  font-size: 45px;
+  font-weight: 800;
+  font-family: "Roboto Condensed";
+  letter-spacing: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.navegador__container__nav__link {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  transition: 0.5s;
+}
+.navegador__container__nav__link:hover {
+  transform: scale(1.3);
+  text-shadow: 1px 10px 15px rgb(222, 103, 238);
+  color: purple;
+}
+
+/*-----------------HERO-----------------------*/
+.hero__img {
+  width: 200px;
+  filter: drop-shadow(0 0 15px rgb(222, 103, 238));
+  transition: all 0.5s;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+.hero__img:hover {
+  transform: scale(0.5);
+}
+.hero__text {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  color: black;
+  background-color: rgb(238, 238, 238);
+  border-radius: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.hero .resaltado {
+  color: rgb(190, 1, 190);
+  font-weight: 900;
+}
+
+/*-------------------MAIN--SECTION-----------------*/
+.title {
+  background-color: rgb(238, 238, 238);
+  box-shadow: 1px 10px 26px rgb(24, 24, 24);
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  font-family: "Roboto Condensed";
+  font-size: 45px;
+  letter-spacing: 3px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/*-------------------ITEM-------------------------------*/
+.container__itemL {
+  width: 100%;
+  height: auto;
+  padding: 25px 40px;
+  border-radius: 15px;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 1px 10px 26px rgb(24, 24, 24);
+}
+.container__itemL__item {
+  text-decoration: none;
+  background-color: white;
+  transition: all 0.5s;
+}
+.container__itemL__item:hover {
+  box-shadow: 1px 5px 26px rgb(222, 103, 238);
+  transform: scale(1.1);
+}
+
+/*-------Titulo---items------------*/
+.itemTitle {
+  font-family: "Roboto Condensed";
+  color: black;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.itemTitle:hover {
+  color: purple;
+}/*# sourceMappingURL=styles.css.map */
