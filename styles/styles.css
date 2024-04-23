@@ -9,12 +9,20 @@
 
 body {
   background-image: url(/assets/circuit-board.svg);
+  background-color: rgb(187, 187, 187);
 }
 
 .mainContent {
   width: 1200px;
   height: auto;
   margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  height: 40px;
+  margin: 40px 0 0;
+  align-content: center;
 }
 
 /*-----------------------HEADER AND NAV------------------*/
@@ -46,10 +54,11 @@ body {
 .hero {
   width: 60%;
   height: 200px;
-  margin: 13rem auto;
+  margin: 9rem auto;
   text-align: center;
 }
 .hero__text {
+  text-wrap: wrap;
   padding: 10px 25px;
 }
 
@@ -62,7 +71,7 @@ body {
   justify-content: center;
   align-items: start;
   gap: 50px;
-  margin: 10rem 0;
+  margin: 5rem 0;
   padding: 50px;
 }
 .seccion .container__itemL {
@@ -168,6 +177,11 @@ body {
 /*Fuente*/
 /*Variables de estilos*/
 /*********************************************************/
+/*---------SCROLLBAR--STYLES-------*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /*-------------------NAVEGADOR-------------------------*/
 .navegador__container {
   background-color: rgb(238, 238, 238);
@@ -208,7 +222,7 @@ body {
 }
 .hero__text {
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 700;
   font-family: "Oswald";
   letter-spacing: 2px;
   color: black;
@@ -231,7 +245,7 @@ body {
   margin: 10px 0;
   padding: 5px 10px;
   font-family: "Roboto Condensed";
-  font-size: 45px;
+  font-size: 35px;
   letter-spacing: 3px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -253,7 +267,7 @@ body {
   transition: all 0.5s;
 }
 .container__itemL__item:hover {
-  box-shadow: 1px 5px 26px rgb(222, 103, 238);
+  box-shadow: 1px 5px 26px purple;
   transform: scale(1.1);
 }
 
@@ -267,4 +281,12 @@ body {
 
 .itemTitle:hover {
   color: purple;
+}
+
+/*-----------FOOTER----------------*/
+footer {
+  background-color: rgb(238, 238, 238);
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  font-weight: 900;
 }/*# sourceMappingURL=styles.css.map */

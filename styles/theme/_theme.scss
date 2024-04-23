@@ -13,6 +13,13 @@
     $color-sombra-purple:rgb(222, 103, 238);
 
 /*********************************************************/
+
+/*---------SCROLLBAR--STYLES-------*/
+
+body::-webkit-scrollbar{
+   display: none;
+}
+
 /*-------------------NAVEGADOR-------------------------*/
 .navegador__container{
     background-color: $color-container-base;
@@ -63,7 +70,7 @@
 
     &__text{
         font-size: 25px;
-        font-weight: 400;
+        font-weight: 700;
         font-family: $fuente-hero;
         letter-spacing: 2px;
 
@@ -94,7 +101,7 @@
     padding: 5px 10px;
 
     font-family: $fuente;
-    font-size: 45px;
+    font-size: 35px;
     letter-spacing: 3px;
 
     user-select: none;
@@ -121,7 +128,7 @@
     }
 
     &__item:hover{
-        box-shadow: 1px 5px 26px $color-sombra-purple;
+        box-shadow: 1px 5px 26px purple;
         transform: scale(1.1);
     }
 }
@@ -138,4 +145,16 @@
 
 .itemTitle:hover{
     color: purple;
+}
+
+
+/*-----------FOOTER----------------*/
+
+footer{
+    background-color: $color-container-base;
+    
+    font-family: $fuente-hero;
+    letter-spacing: 2px;
+    font-weight: 900;
+
 }

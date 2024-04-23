@@ -48,11 +48,12 @@
     width: 60%;
     height:200px;
 
-    margin: 13rem auto;
+    margin: 9rem auto;
     
     text-align: center;
 
     &__text{
+        text-wrap: wrap;
         padding: 10px 25px;
     }
 }
@@ -72,7 +73,7 @@
     align-items: start;
     gap: 50px;
 
-    margin: 10rem 0;
+    margin: 5rem 0;
     padding: 50px;
 
 
