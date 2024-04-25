@@ -57,16 +57,16 @@ body::-webkit-scrollbar{
 .hero{
 
     &__img{
-        width: 200px;
+        width: 150px;
         filter: drop-shadow(0 0 15px $color-sombra-purple);
-        transition: all 0.5s;
+        // transition: all 0.5s;
         margin-bottom: 70px;
         cursor: pointer;
     }
 
-    &__img:hover{
-        transform: scale(0.5);
-    }
+    // &__img:hover{
+    //     transform: scale(0.5);
+    // }
 
     &__text{
         font-size: 25px;
