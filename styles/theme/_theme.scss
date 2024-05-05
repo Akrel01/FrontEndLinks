@@ -32,6 +32,19 @@ body::-webkit-scrollbar{
         letter-spacing: 5px;
 
         user-select: none;
+
+        @include movilL{
+            padding-top: 10px;
+            font-size: 30px;
+        }
+
+        @include movilS{
+            font-size: 25px;
+        }
+
+        @include smallDevices{
+            font-size: 20px;
+        }
     }
 
     &__nav{
@@ -55,7 +68,6 @@ body::-webkit-scrollbar{
 /*-----------------HERO-----------------------*/
 
 .hero{
-
     &__img{
         width: 150px;
         filter: drop-shadow(0 0 15px $color-sombra-purple);
@@ -80,6 +92,15 @@ body::-webkit-scrollbar{
         border-radius: 15px;
 
         user-select: none;
+
+        @include movilS{
+            font-size: 19px;
+        }
+
+        @include smallDevices {
+            font-size: 15px;
+            font-weight: 900;
+        }
     }
 
 

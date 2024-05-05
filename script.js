@@ -1,7 +1,6 @@
 
 
-let btnUp = document.querySelector(".btnup")
-
+let btnUp = document.querySelector(".btnup");
 
 
 // SCROLL UP
