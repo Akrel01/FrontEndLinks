@@ -102,6 +102,11 @@ footer {
 }
 
 /*-------------------ITEM-------------------------------*/
+@media screen and (max-width: 425px) {
+  .container__itemL {
+    justify-content: center;
+  }
+}
 .container__itemL__item {
   display: flex;
   flex-direction: column;

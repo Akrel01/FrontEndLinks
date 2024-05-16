@@ -108,6 +108,14 @@
 /*-------------------ITEM-------------------------------*/
 
 .container__itemL{
+
+
+    @include justifyItems{
+        justify-content: center;
+       
+    }
+
+
     &__item{
         display: flex;
         flex-direction: column;
@@ -227,6 +235,7 @@
     &__img{
         width: 40px;
     }
+
  }
 
  .btnup:hover{
